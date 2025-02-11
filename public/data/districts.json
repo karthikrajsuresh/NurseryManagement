@@ -1,0 +1,18 @@
+[
+    {
+        "district_id": 1,
+        "district": "Chennai"
+    },
+    {
+        "district_id": 2,
+        "district": "Madurai"
+    },
+    {
+        "district_id": 8,
+        "district": "Salem"
+    },
+    {
+        "district_id": 4,
+        "district": "Kanchipuram"
+    }
+]

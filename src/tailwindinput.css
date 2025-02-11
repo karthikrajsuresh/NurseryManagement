@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bluebtn {
+    @apply rounded-full uppercase text-xs cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3
+}
+
+.redbtn {
+    @apply rounded-full uppercase text-xs cursor-pointer bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-3
+}
+
+.graybtn {
+    @apply rounded-full uppercase text-xs cursor-pointer bg-gray-400 hover:bg-gray-700 text-white font-bold py-2 px-3
+}
+
+.popup {
+    @apply fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center w-screen;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup-content {
+    @apply bg-white p-6 rounded-lg shadow-lg max-w-md w-full;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-content-enter {
+    @apply transform scale-0;
+}
+
+.popup-content-enter-active {
+    @apply transform scale-100;
+}
+
+.popup-content-leave {
+    @apply transform scale-100;
+}
+
+.popup-content-leave-active {
+    @apply transform scale-0;
+}
+
+.popup-content {
+    @apply bg-white p-6 rounded-lg shadow-lg max-w-md w-full transition duration-300 ease-in-out;
+}
+
+.form {
+    @apply max-w-md mx-auto p-10 bg-white rounded-lg shadow-lg md:max-w-fit lg:max-w-fit inset-20;
+}
+
+.form-content {
+    @apply flex flex-col space-y-6 md:space-y-8 lg:space-y-10 inset-20;
+}
+
+/* npx tailwindcss -i ./src/tailwindinput.css -o ./src/index.css --watch */
